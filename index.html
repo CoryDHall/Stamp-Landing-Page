@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Front End Challenge</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <style media="screen">
+      body {
+        margin: 0;
+        color: #f8f8f8;
+      }
+      :link,
+      :visited,
+      :active {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      .subnav {
+        visibility: hidden;
+      }
+      .main-container {
+        min-height: 100vh;
+        background-size: cover;
+        background-image:
+          linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.05), rgba(0,0,0,.3)),
+          url(./images/hero.jpg),
+          linear-gradient(#149, #142);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body class="unloaded">
+    <div class="main-container">
+      <nav class="top-nav">
+        <li class="nav-logo nav-item">
+          <a href="/">
+            Logo
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#">
+            About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            Integrations
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            Pricing
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            Contacts
+          </a>
+        </li>
+
+        <li class="nav-item nav-menu">
+          <a href="#" class="nav-menu-trigger">
+            Hamburger
+          </a>
+          <nav class="subnav">
+            <li class="subnav-item">
+              <a href="#">
+                About
+              </a>
+            </li>
+            <li class="subnav-item">
+              <a href="#">
+                Integrations
+              </a>
+            </li>
+            <li class="subnav-item">
+              <a href="#">
+                Pricing
+              </a>
+            </li>
+            <li class="subnav-item">
+              <a href="#">
+                Contacts
+              </a>
+            </li>
+          </nav>
+        </li>
+      </nav>
+    </div>
+    <script src="./src/index.js" charset="utf-8" defer async></script>
+    <script type="text/javascript">
+      window.addEventListener('load', function removeLoad() {
+        document.body.classList.remove('unloaded')
+        document.body.classList.add('loaded')
+        window.removeEventListener('load', removeLoad);
+      })
+    </script>
+  </body>
+</html>

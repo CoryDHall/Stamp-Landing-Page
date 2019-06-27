@@ -1,0 +1,46 @@
+.top-nav {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+
+.top-nav .nav-item {
+  display: block;
+  margin: 12px;
+}
+
+.top-nav .nav-logo {
+  margin-right: auto;
+}
+
+.top-nav .nav-menu {
+  margin-left: auto;
+}
+
+.subnav {
+  position: absolute;
+}
+
+.subnav-item {
+  display: block;
+}
+
+.nav-menu.open .subnav {
+  visibility: visible;
+}
+
+.submenu-background-cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+  transition: background-color 80ms;
+}
+
+.submenu-open .submenu-background-cover {
+  background-color: rgba(0,0,0,.4);
+  bottom: 0;
+  left: 0;
+}
