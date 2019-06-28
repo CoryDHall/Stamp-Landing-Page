@@ -8,6 +8,7 @@
       body {
         margin: 0;
         color: #f8f8f8;
+        font-family: sans-serif;
       }
       :link,
       :visited,
@@ -24,9 +25,10 @@
         background-image:
           linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.05), rgba(0,0,0,.3)),
           url(./images/hero.jpg),
-          linear-gradient(#149, #142);
+          linear-gradient(90deg, #149, #142);
         background-attachment: fixed;
         background-repeat: no-repeat;
+        color: #fff;
       }
     </style>
   </head>
@@ -35,26 +37,26 @@
       <nav class="top-nav">
         <li class="nav-logo nav-item">
           <a href="/">
-            Logo
+            <img src="/images/Logo@2x.png" alt="Stamp" width="91" height="33">
           </a>
         </li>
 
-        <li class="nav-item">
+        <li class="nav-item nav-link">
           <a href="#">
             About
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-link">
           <a href="#">
             Integrations
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-link">
           <a href="#">
             Pricing
           </a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item nav-link">
           <a href="#">
             Contacts
           </a>
@@ -62,7 +64,7 @@
 
         <li class="nav-item nav-menu">
           <a href="#" class="nav-menu-trigger">
-            Hamburger
+            <img src="/images/HamburgerIcon@2x.png" alt="Menu" height="19" class="icon">
           </a>
           <nav class="subnav">
             <li class="subnav-item">
@@ -88,6 +90,69 @@
           </nav>
         </li>
       </nav>
+      <main class="content">
+        <header>
+          <h1>
+            Simple Way to Organize Your Inspirations
+          </h1>
+          <p>
+            I think what motivates people is not great hate,
+            <br>
+            but great love for other people.
+          </p>
+        </header>
+        <form class="sign-up-form" action="/" method="post">
+          <h5>Sign up for free</h5>
+          <div class="input-group">
+            <div class="input">
+              <input type="text" name="user[name]" value="" id="user_name" required>
+              <label for="user_name">Name</label>
+            </div>
+            <div class="input">
+              <input type="email" name="user[email]" value="" id="user_email" required>
+              <label for="user_email">Email</label>
+            </div>
+            <div class="input">
+              <input type="password" name="user[password]" value="" id="user_password" required>
+              <label for="user_password">Password</label>
+            </div>
+            <input type="submit" name="submit" value="Sign up" class="submit-button"/>
+          </div>
+          <small class="legal">
+            By clicking "Sign up" I agree to our
+            <a href="#">
+              Terms of Service.
+            </a>
+          </small>
+        </form>
+      </main>
+      <footer class="footer">
+        <small class="legal">
+          &copy; 2019 Stamp. All Rights Reserved.
+        </small>
+        <nav class="footer-nav">
+          <li class="nav-item nav-link">
+            <a href="#">
+              Contact
+            </a>
+          </li>
+          <li class="nav-item nav-link">
+            <a href="#">
+              Help
+            </a>
+          </li>
+          <li class="nav-item nav-link">
+            <a href="#">
+              Terms of Use
+            </a>
+          </li>
+          <li class="nav-item nav-link">
+            <a href="#">
+              Privacy Policy
+            </a>
+          </li>
+        </nav>
+      </footer>
     </div>
     <script src="./src/index.js" charset="utf-8" defer async></script>
     <script type="text/javascript">
