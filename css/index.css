@@ -48,7 +48,6 @@ a:focus {
 .subnav-item {
   display: block;
   margin: 4px 12px;
-  /* padding: 12px 0; */
   opacity: 0;
   transform: translateY(-12px);
   transition: transform 280ms, opacity 200ms, visibility 280ms;
@@ -239,17 +238,11 @@ a:focus {
   margin-top: 24px;
 }
 .footer .legal {
-  /* margin-right: 48px; */
-  /* flex: 0 1 50%; */
-  /* order: 1; */
   margin: 0 12px;
 }
 
 .footer-nav {
   display: flex;
-  /* margin: 12px 24px; */
-  /* flex: 1 1 50%; */
-  /* justify-content: space-between; */
 }
 
 .footer-nav .nav-item {
